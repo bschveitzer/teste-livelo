@@ -11,11 +11,17 @@ body {
 </style>
 <template>
   <div>
+    <bs-header></bs-header>
     <router-view></router-view>
   </div>
 </template>
 <script>
+import BsHeader from './components/BsHeader.vue'
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    BsHeader
+  }
 };
 </script>
