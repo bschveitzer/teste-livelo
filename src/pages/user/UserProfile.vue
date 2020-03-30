@@ -1,6 +1,6 @@
 <style lang="scss">
 $breakpoint-phone: 640px;
-$breakpoint-tablet: 767px;
+$breakpoint-tablet: 769px;
 
 .grid {
   display: flex;
@@ -9,6 +9,12 @@ $breakpoint-tablet: 767px;
     width: 100%;
   }
   @media (min-width: $breakpoint-phone){
+    .grid__item {
+      width: 40%;
+      max-width: 400px;
+    }
+  }
+  @media (min-width: $breakpoint-tablet){
     .grid__item {
       width: 33%;
       max-width: 400px;

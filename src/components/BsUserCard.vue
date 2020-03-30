@@ -45,7 +45,7 @@
     </div>
     <div class="card_actions">
       <bs-button text="Repositórios" append-icon="collections_bookmark" @click="$router.push(`/user/${user.login}/repos`)"/>
-      <bs-button text="Votados" append-icon="star"  @click="$router.push(`/user/${user.login}/starred`)"/>
+      <bs-button text="Favoritos" append-icon="assistant"  @click="$router.push(`/user/${user.login}/starred`)"/>
     </div>
   </div>
 </template>

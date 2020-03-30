@@ -58,7 +58,10 @@ export default {
     };
   },
   methods: {
+    /* Executa a ação de busca caso exista um termo de pesquisa */
     async handleSearch() {
+      if(!this.searchTerm) return
+      
       this.loading = true
       const resp = await search(this.searchTerm)
       if(resp.status === 200) {
@@ -72,6 +75,7 @@ export default {
     }
   },
   mounted() {
+    /* Tratamento de atualização de informações da busca quando houver reload na página */
     if(this.$route.params.username) {
       this.searchTerm = this.$route.params.username;
       this.handleSearch();

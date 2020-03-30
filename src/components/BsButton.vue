@@ -53,7 +53,6 @@ $add-color: #4caf50;
       <i
         v-if="appendIcon && !loading"
         class="material-icons button__icon"
-        @click="actionTriggered"
         >{{ appendIcon }}</i
       >
       <span v-if="!loading">{{ text }}</span>
